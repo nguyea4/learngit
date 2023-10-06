@@ -90,7 +90,8 @@ For these steps, my initial folder is `Documents`
          create mode 100644 hello_world.py
       ~~~
    * Push commit to branch: `git push`
-    *  It probably will tell you that there is no upstream for your new branch. This means your local branch needs to connect with the online repo branch. It will suggest making a branch with the same online that your local branch connects to with ` git push --set-upstream origin hello_world` 
+    *  It probably will tell you that there is no upstream for your new branch. This means your local branch needs to connect with the online repo branch. It will suggest making a branch with the same online that your local branch connects to with ` git push --set-upstream origin hello_world`
+    *  EDIT: I ran into problems with authentication needing to make a token. I followed [this instruction](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) given by the terminal. Follow whatever they suggest. Still figuring out how this work.
 
 ## Markdown README file  <a id="readme"></a>
 use 1 \# [Header], or  \#\# [header2] or \#\#\# [header 3] etc. for smaller headers
