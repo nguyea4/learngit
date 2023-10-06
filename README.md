@@ -23,7 +23,27 @@ Use some linux terminal (On Windows I use Windows subsystem for Linux (WSL)
 
 Configure your account identity. I do this globally. remove `--global` if you want an identity only on a repo
  * Email: `git config --global user.email "youremail@gmail.com"
- * Name: `git config --global user.name "your name"
+ * Name: `git config --global user.name "username"
+
+Setup SSH key for github
+Taken from this [documentation](https://docs.gitlab.com/ee/user/ssh.html#adding-an-ssh-key-to-your-gitlab-account)
+1. In terminal go back to biggest folder ever:  `cd`
+2. go to ssh folder: `cd .ssh`
+3. List files: `ls`
+4. (?) Do see a `.pub` file? No(go to step 5), Yes(Go to Step 6)
+5. Generate ssh key `ssh-keygen -t ed25519 -C "<comment>"` they suggest your email as the comment
+6. Keep clicking enter for whatever they prompt
+7. Now you have an ssh key. copy the public key.
+   ~~~
+   cd
+   cd .ssh
+   ls
+   vim [file ending in .pub]
+   copy text
+   ~~~
+   You now have ssh key in clip board
+8. Go to Github website -> Click Top Right profile picture -> Setting -> SSH key -> New SSH Key -> Paste SSH key
+9. Save
 And you should be good?
 
 
@@ -91,7 +111,8 @@ For these steps, my initial folder is `Documents`
       ~~~
    * Push commit to branch: `git push`
     *  It probably will tell you that there is no upstream for your new branch. This means your local branch needs to connect with the online repo branch. It will suggest making a branch with the same online that your local branch connects to with ` git push --set-upstream origin hello_world`
-    *  EDIT: I ran into problems with authentication needing to make a token. I followed [this instruction](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) given by the terminal. Follow whatever they suggest. Still figuring out how this work.
+    *  EDIT: I ran into problems  when pushing. Just look on stackoverflow for your answer. Mine was that I didnt set up SSH.
+  6. Changes are now up and can be merged into main
 
 ## Markdown README file  <a id="readme"></a>
 use 1 \# [Header], or  \#\# [header2] or \#\#\# [header 3] etc. for smaller headers
