@@ -19,9 +19,12 @@ Try these commands with this git repo to see if you can get the hang of it
 
 Things I use alot:  
 1. **`git status`**
-2. **`git add whatevername.py`**
-3. **`git commit -m "Title" -m "Description .........."`**
-4. **`git push`**
+2. **`git branch --all`**
+3. **`git checkout branchname`**
+4. **`git pull`**
+5. **`git add whatevername.py`**
+6. **`git commit -m "Title" -m "Description .........."`**
+7. **`git push`**
 
 ### Install/Setup git
 I follow [this reference](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)  
@@ -70,7 +73,8 @@ For these steps, my initial folder is `Documents`
    * `git clone git@github.com:nguyea4/learngit.git`
    * I go to that folder with `cd learngit`
    * I now have a folder `Documents/learngit` with the stuff in the `MAIN` branch
-4. Test to make sure you have stuff and can run/see things. Try running  `python3 Hello_World.py`
+4. Pull repo to get latest updates: **`git pull`**
+5. Test to make sure you have stuff and can run/see things. Try running  `python3 Hello_World.py`
    * Check all branches with `git branch --all'
    * You should see
    * ~~~
@@ -79,7 +83,7 @@ For these steps, my initial folder is `Documents`
      remotes/origin/HEAD -> origin/main  [HEAD is the branch that you are working on. here's its pointing to the Online remote main]
      remotes/origin/main
      ~~~
-5. **Make a Change**.
+6. **Make a Change**.
    * New or Switch branches: Make a new branch and checkout with `git checkout -b branchname`.
      * Never make changes directly into Main. A branch is your playground. the `-b` means new branch
      * If you see the branch you want to work on with someone, just do `git checkout branchname`
@@ -93,7 +97,7 @@ For these steps, my initial folder is `Documents`
        remotes/origin/main
        ~~~
     * Now you can make changes and you can test it too
-6. Make your own file and make those changes
+7. Make your own file and make those changes
    * In whatever developer environment/IDE(I'm using notepad textfiles) save a python file `whatevername.py`
    * Code your python file in your IDE
    * See what changes you made: **`git status`**
@@ -121,11 +125,11 @@ For these steps, my initial folder is `Documents`
    * Push commit to branch: **`git push`**
     *  It probably will tell you that there is no upstream for your new branch. This means your local branch needs to connect with the online repo branch. It will suggest making a branch with the same online that your local branch connects to with ` git push --set-upstream origin hello_world`
     *  EDIT: I ran into problems  when pushing. Just look on stackoverflow for your answer. Mine was that I didnt set up SSH.
-  7. Changes are now up and can be merged into main
-  8. Pull Request: If your branch is behind main(like Main is 3 commits ahead, your branch is 1 commit ahead), you first need to pull the NEW main into your branch and resolve merge. (Insert image)
-  9. Merge Request: After your branch is now up to date with more commits ahead of main, you can merge it in. Resolve merge conflicts (insert image)
-  10. You have alot of flexibility in who can make changes/approve/timeline etc. Play around with the setting but here are the basics!
-  11. You're done!
+  8. Changes are now up and can be merged into main
+  9. Pull Request: If your branch is behind main(like Main is 3 commits ahead, your branch is 1 commit ahead), you first need to pull the NEW main into your branch and resolve merge. (Insert image)
+  10. Merge Request: After your branch is now up to date with more commits ahead of main, you can merge it in. Resolve merge conflicts (insert image)
+  11. You have alot of flexibility in who can make changes/approve/timeline etc. Play around with the setting but here are the basics!
+  12. You're done!
 
 ## Markdown README file  <a id="readme"></a>
 This is documentation stuff. Don't worry too much about it now.
