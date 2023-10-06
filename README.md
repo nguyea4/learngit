@@ -17,6 +17,12 @@ This is by no means a comprehensive guide. This is the git commands for beginner
 ## github <a id="github"></a>
 Try these commands with this git repo to see if you can get the hang of it
 
+Things I use:
+1. **`git status`**
+2. **`git add whatevername.py`**
+3. **`git commit -m "Title" -m "Description .........."`**
+4. **`git push`**
+
 ### Install/Setup git
 I follow [this reference](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)  
 Use some linux terminal (On Windows I use Windows subsystem for Linux (WSL)  
@@ -73,7 +79,7 @@ For these steps, my initial folder is `Documents`
      remotes/origin/HEAD -> origin/main  [HEAD is the branch that you are working on. here's its pointing to the Online remote main]
      remotes/origin/main
      ~~~
-5. Make a Change.
+5. **Make a Change**.
    * New or Switch branches: Make a new branch and checkout with `git checkout -b branchname`.
      * Never make changes directly into Main. A branch is your playground. the `-b` means new branch
      * If you see the branch you want to work on with someone, just do `git checkout branchname`
@@ -90,7 +96,7 @@ For these steps, my initial folder is `Documents`
 6. Make your own file and make those changes
    * In whatever developer environment/IDE(I'm using notepad textfiles) save a python file `whatevername.py`
    * Code your python file in your IDE
-   * See what changes you made: `git status`
+   * See what changes you made: **`git status`**
     * ~~~
       git status
       On branch hello_world
@@ -101,9 +107,9 @@ For these steps, my initial folder is `Documents`
       
       nothing added to commit but untracked files present (use "git add" to track)
       ~~~ 
-   * Add your change to a commit: `git add whatevername.py`.
+   * Add your change to a commit: **`git add whatevername.py`**.
     * You can also add whole folders
-   * Commit change to your branch: `git commit -m "Title" -m "Description ..........";
+   * Commit change to your branch: **`git commit -m "Title" -m "Description .........."`**
     * 'Title' is the main thing people see on the website next to a file change
     * 'Description' is if you want to explain in more detail what change was made
     * ~~~
@@ -112,7 +118,7 @@ For these steps, my initial folder is `Documents`
          1 file changed, 1 insertion(+)
          create mode 100644 hello_world.py
       ~~~
-   * Push commit to branch: `git push`
+   * Push commit to branch: **`git push`**
     *  It probably will tell you that there is no upstream for your new branch. This means your local branch needs to connect with the online repo branch. It will suggest making a branch with the same online that your local branch connects to with ` git push --set-upstream origin hello_world`
     *  EDIT: I ran into problems  when pushing. Just look on stackoverflow for your answer. Mine was that I didnt set up SSH.
   7. Changes are now up and can be merged into main
