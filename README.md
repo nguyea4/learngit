@@ -17,7 +17,7 @@ This is by no means a comprehensive guide. This is the git commands for beginner
 ## github <a id="github"></a>
 Try these commands with this git repo to see if you can get the hang of it
 
-Things I use:
+Things I use alot:  
 1. **`git status`**
 2. **`git add whatevername.py`**
 3. **`git commit -m "Title" -m "Description .........."`**
