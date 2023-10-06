@@ -17,7 +17,7 @@ This is by no means a comprehensive guide. This is the git commands for beginner
 ## github <a id="github"></a>
 Try these commands with this git repo to see if you can get the hang of it
 
-### Installing git
+### Install/Setup git
 I follow [this reference](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)  
 Use some linux terminal (On Windows I use Windows subsystem for Linux (WSL)  
 
@@ -113,8 +113,14 @@ For these steps, my initial folder is `Documents`
     *  It probably will tell you that there is no upstream for your new branch. This means your local branch needs to connect with the online repo branch. It will suggest making a branch with the same online that your local branch connects to with ` git push --set-upstream origin hello_world`
     *  EDIT: I ran into problems  when pushing. Just look on stackoverflow for your answer. Mine was that I didnt set up SSH.
   6. Changes are now up and can be merged into main
+  7. Pull Request: If your branch is behind main(like Main is 3 commits ahead, your branch is 1 commit ahead), you first need to pull the NEW main into your branch and resolve merge. (Insert image)
+  8. Merge Request: After your branch is now up to date with more commits ahead of main, you can merge it in. Resolve merge conflicts (insert image)
+  9. You have alot of flexibility in who can make changes/approve/timeline etc. Play around with the setting but here are the basics!
+  10. You're done!
 
 ## Markdown README file  <a id="readme"></a>
+This is documentation stuff. Don't worry too much about it now.
+
 use 1 \# [Header], or  \#\# [header2] or \#\#\# [header 3] etc. for smaller headers
 
 To make a "new line" either '\<br\/\>' or '[space][space][enter]' at the end of a line  
